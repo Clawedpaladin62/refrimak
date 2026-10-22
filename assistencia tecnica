@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refrimak | Assistência técnica em refrigeração e máquinas de lavar</title>
+<style>
+:root{color-scheme:dark;--bg:#050b14;--bg2:#0a1626;--card:#0d1c30;--line:#16304d;--blue:#1e6bff;--cyan:#27d4ff;--txt:#fff;--mut:#9fb4cc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;line-height:1.35;font-size:17px}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+h1,h2,h3{font-family:Impact,"Arial Narrow Bold","Arial Black",sans-serif;text-transform:uppercase;letter-spacing:.5px;font-weight:400}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--blue),var(--cyan));color:#00101f;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:14px 26px;border-radius:6px;text-decoration:none;border:0;cursor:pointer;font:700 16px inherit;font-family:inherit;box-shadow:0 0 22px #27d4ff44}
+.btn.o{background:none;color:var(--cyan);border:1px solid var(--cyan);box-shadow:none;padding:10px 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#050b14ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#050b14;z-index:10}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Impact,sans-serif;font-size:28px;letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.logo b{color:var(--cyan);font-weight:400}
+nav a{color:var(--mut);text-decoration:none;margin-left:20px;text-transform:uppercase;font-size:15px;letter-spacing:1px}
+@media(max-width:700px){nav a:not(.keep){display:none}}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 40%,#0b3a78 0,#07182e 40%,var(--bg) 75%)}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;padding-top:56px;padding-bottom:56px}
+@media(max-width:800px){.hero .w{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(44px,8vw,86px);line-height:.95}
+.hero h1 span{color:var(--cyan);text-shadow:0 0 28px #27d4ff88;display:block}
+.hero p{color:var(--mut);font-size:20px;margin:18px 0 26px;max-width:460px}
+.tags{margin-top:20px;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut)}
+.tags i{color:var(--cyan);font-style:normal;margin:0 6px}
+.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:3px;font-size:13px}
+section{padding:56px 0}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;gap:12px;flex-wrap:wrap}
+h2{font-size:34px}
+h2::after{content:"";display:block;width:44px;height:3px;background:var(--cyan);margin-top:8px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.2s}
+.card:hover{border-color:var(--cyan);box-shadow:0 0 24px #27d4ff22;transform:translateY(-3px)}
+.card .img{height:150px;display:grid;place-items:center;background:linear-gradient(160deg,#10294a,#071221)}
+.card .b{padding:16px;position:relative}
+.ic{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;position:absolute;top:-22px;left:16px;box-shadow:0 0 16px #27d4ff66}
+.card h3{font-size:19px;margin-top:20px;margin-bottom:6px}
+.card p{color:var(--mut);font-size:16px}
+.card a{color:var(--cyan);font-size:14px;text-transform:uppercase;letter-spacing:1px;text-decoration:none;display:inline-block;margin-top:10px}
+svg.l{width:48px;height:48px;fill:none;stroke:var(--cyan);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic svg{width:22px;height:22px;stroke:#00101f;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why{background:var(--bg2);border-block:1px solid var(--line);text-align:center}
+.why h2::after{margin-inline:auto}
+.why .grid4>div{padding:8px 14px;border-left:1px solid var(--line)}
+.why .grid4>div:first-child{border:0}
+.why h3{font-size:19px;margin:10px 0 4px}
+.why p{color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.ba{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden;height:230px}
+.ba div{position:relative;display:grid;place-items:center}
+.ba .a{background:linear-gradient(160deg,#173a66,#0a1e38)}
+.ba .d{background:linear-gradient(160deg,#2b2f35,#14161a)}
+.ba em{position:absolute;top:10px;left:10px;font:700 12px Arial;letter-spacing:1px;padding:4px 10px;border-radius:4px;background:#e3e8ee;color:#111;font-style:normal}
+.ba .a em{background:var(--cyan)}
+.ba svg{width:90px;height:140px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+form .f{grid-column:1/-1}
+input,select,textarea{width:100%;background:#071221;border:1px solid var(--line);color:#fff;border-radius:6px;padding:12px;font:16px inherit;font-family:Arial,sans-serif;font-size:14px}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--cyan)}
+textarea{min-height:80px;resize:vertical}
+.stars{color:var(--cyan);letter-spacing:2px}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+.rev .card{padding:18px}
+.who{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;font-weight:700;color:#00101f}
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;padding:28px 0;border-block:1px solid var(--line);color:var(--mut);font-family:Impact,sans-serif;font-size:22px;letter-spacing:2px;text-transform:uppercase}
+.cta{text-align:center;background:linear-gradient(90deg,#0b3a78,#0a6d8f);padding:44px 20px}
+.cta h2{font-size:clamp(30px,6vw,52px)}.cta h2::after{margin-inline:auto;background:#fff}
+.cta p{margin:10px 0 20px;color:#dff4ff}
+footer{padding:26px 0;text-align:center;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="w">
+<div class="logo"><svg class="l" style="width:30px;height:30px" viewBox="0 0 24 24"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg>REFRI<b>MAK</b></div>
+<nav><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#agendar">Agendar</a><a class="keep btn o" href="#agendar" style="margin-left:20px">Orçamento</a></nav>
+</div></header>
+
+<div class="hero"><div class="w">
+<div>
+<div class="eyebrow">Assistência técnica especializada</div>
+<h1>Seu eletrodoméstico.<span>Nossa especialidade.</span></h1>
+<p>Geladeira, freezer e máquina de lavar com conserto profissional, peças de qualidade e garantia no serviço. Sem dor de cabeça.</p>
+<a class="btn" href="#agendar">Agendar atendimento →</a>
+<div class="tags">Atendimento rápido <i>•</i> Preço justo <i>•</i> Garantia</div>
+</div>
+<svg viewBox="0 0 300 340" role="img" aria-label="Geladeira Frost Free" style="width:100%;max-height:380px;filter:drop-shadow(0 0 30px #27d4ff55)">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f6ff"/><stop offset="1" stop-color="#7fb4e6"/></linearGradient></defs>
+<rect x="85" y="10" width="130" height="320" rx="12" fill="url(#g)"/><rect x="90" y="15" width="120" height="105" rx="8" fill="#cfe6fa"/><rect x="90" y="125" width="120" height="200" rx="8" fill="#b9d8f5"/>
+<rect x="98" y="50" width="6" height="40" rx="3" fill="#1e6bff"/><rect x="98" y="160" width="6" height="70" rx="3" fill="#1e6bff"/>
+<g stroke="#27d4ff" stroke-width="2.5" stroke-linecap="round" fill="none"><path d="M40 170h30M55 155v30M45 160l20 20M65 160l-20 20"/><path d="M240 120h30M255 105v30M245 110l20 20M265 110l-20 20"/><path d="M235 250h24M247 238v24"/></g>
+</svg>
+</div></div>
+
+<section id="servicos"><div class="w">
+<div class="head"><div><div class="eyebrow">O que fazemos</div><h2>Nossos serviços</h2></div><a class="btn o" href="#agendar">Ver todos →</a></div>
+<div class="grid4">
+<div class="card"><div class="img"><svg class="l" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 9h12M9 5v2M9 12v3"/></svg></div><div class="b"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M5 6l14 12M19 6L5 18"/></svg></div><h3>Geladeira</h3><p>Não gela, faz barulho ou vaza? Diagnóstico e reparo completos.</p><a href="#agendar">Saiba mais →</a></div></div>
+<div class="card"><div class="img"><svg class="l" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M5 8h14M9 5h.01M12 5h.01"/></svg></div><div class="b"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 8l16 8M20 8L4 16"/></svg></div><h3>Frost Free</h3><p>Placa, sensor e degelo. Manutenção que economiza energia.</p><a href="#agendar">Saiba mais →</a></div></div>
+<div class="card"><div class="img"><svg class="l" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="14" r="5"/><path d="M8 5.5h.01M11 5.5h5"/></svg></div><div class="b"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12c2-2 6 2 8 0"/></svg></div><h3>Máquina de lavar</h3><p>Não centrifuga, não enche ou vibra demais? A gente resolve.</p><a href="#agendar">Saiba mais →</a></div></div>
+<div class="card"><div class="img"><svg class="l" viewBox="0 0 24 24"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0z"/></svg></div><div class="b"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0z"/></svg></div><h3>Manutenção preventiva</h3><p>Evite o problema antes dele aparecer e prolongue a vida útil.</p><a href="#agendar">Saiba mais →</a></div></div>
+</div></div></section>
+
+<section class="why" id="diferenciais"><div class="w">
+<h2>Por que escolher a Refrimak?</h2><div style="height:24px"></div>
+<div class="grid4">
+<div><svg class="l" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><h3>Técnicos qualificados</h3><p>Profissionais experientes em que você pode confiar.</p></div>
+<div><svg class="l" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Peças de qualidade</h3><p>Componentes confiáveis para desempenho duradouro.</p></div>
+<div><svg class="l" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9c-.5-1-3.5-1.5-4 .5s4 1.5 4 3.5-3.5 2-4.5.5M12 6.5v11"/></svg><h3>Preço transparente</h3><p>Sem taxas escondidas. Sem surpresas.</p></div>
+<div><svg class="l" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><h3>Atendimento ágil</h3><p>Pontualidade e rapidez em cada visita.</p></div>
+</div></div></section>
+
+<section><div class="w two">
+<div>
+<h2>Antes e depois</h2><div style="height:20px"></div>
+<div class="ba"><div class="d"><em>ANTES</em><svg viewBox="0 0 90 140" fill="none" stroke="#778" stroke-width="2"><rect x="10" y="5" width="70" height="130" rx="6"/><path d="M10 50h70M25 70l8 10-6 12M55 90l-8 12"/></svg></div>
+<div class="a"><em>DEPOIS</em><svg viewBox="0 0 90 140" fill="none" stroke="#27d4ff" stroke-width="2"><rect x="10" y="5" width="70" height="130" rx="6"/><path d="M10 50h70M36 70l-4 3M45 85l-9-4 9-9M58 100l-6-6"/><path d="M30 28l8 8 14-14"/></svg></div></div>
+<p style="color:var(--mut);margin-top:12px">Resultados reais. Clientes satisfeitos. Devolvemos a vida ao seu eletrodoméstico. <small>(Substitua por fotos reais de antes/depois.)</small></p>
+</div>
+<div class="panel" id="agendar">
+<h2>Agende seu atendimento</h2>
+<form id="f">
+<input id="n" placeholder="Seu nome" required><input id="t" placeholder="Telefone / WhatsApp" required>
+<select id="s"><option>Geladeira</option><option>Freezer / Frost Free</option><option>Máquina de lavar</option><option>Manutenção preventiva</option></select>
+<input id="d" placeholder="Data preferida" type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'">
+<textarea id="o" class="f" placeholder="Conte o que está acontecendo"></textarea>
+<button class="btn f" type="submit">Enviar pelo WhatsApp →</button>
+</form></div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2>O que dizem nossos clientes</h2>
+<div class="rev">
+<div class="card"><div class="who"><div class="av">M</div><div><b>Marcos S.</b><div class="stars">★★★★★</div></div></div><p>Atendimento rápido e a geladeira voltou a gelar no mesmo dia.</p></div>
+<div class="card"><div class="who"><div class="av">A</div><div><b>Ana P.</b><div class="stars">★★★★★</div></div></div><p>Preço justo e explicaram tudo antes do conserto. Recomendo!</p></div>
+<div class="card"><div class="who"><div class="av">R</div><div><b>Rafael L.</b><div class="stars">★★★★★</div></div></div><p>Minha máquina de lavar parece nova. Técnico muito atencioso.</p></div>
+</div>
+<p style="color:var(--mut);font-size:13px;margin-top:8px">Depoimentos de exemplo; substitua pelos de clientes reais.</p>
+</div></section>
+
+<div class="w"><div class="brands"><span>Brastemp</span><span>Consul</span><span>Electrolux</span><span>Samsung</span><span>LG</span><span>Midea</span></div></div>
+
+<div class="cta"><h2>Mantemos sua casa funcionando</h2><p>Peça seu orçamento agora e fale com um técnico.</p><a class="btn" href="#agendar" style="background:#fff;box-shadow:none">Agendar agora →</a></div>
+<footer>© Refrimak. Assistência técnica em refrigeração e máquinas de lavar.</footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var v=function(i){return document.getElementById(i).value};
+var NUM='5500000000000'; /* troque pelo WhatsApp da Refrimak (DDI+DDD+número) */
+var m='Olá, Refrimak! Meu nome é '+v('n')+'. Serviço: '+v('s')+'. Data preferida: '+(v('d')||'a combinar')+'. Telefone: '+v('t')+'. '+v('o');
+window.open('https://wa.me/'+NUM+'?text='+encodeURIComponent(m),'_blank');});
+</script>
+</body>
+</html>
